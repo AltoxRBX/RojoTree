@@ -21,7 +21,7 @@
 ```bash
 src/
 |_Services/
-  |_ExampleService
+  |_ExampleService/
     |_Client.luau
     |_Server.luau
     |_Utils.luau

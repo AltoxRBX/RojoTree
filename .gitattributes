@@ -1,6 +1,4 @@
 * text=auto
-*.rs linguist-language=Rust
-*.luau linguist-language=Luau
 *.md linguist-documentation
 README.md linguist-documentation
 LICENSE linguist-documentation
@@ -9,3 +7,6 @@ LICENSE.* linguist-documentation
 *.yml linguist-documentation
 *.yaml linguist-documentation
 *.json linguist-documentation
+*.rs linguist-language=Rust
+*.luau linguist-language=Luau
+*.lock linguist-vendored
