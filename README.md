@@ -1,20 +1,7 @@
-# RojoTree by **@AltoxGIT** (aka **@AltoxRBX**)
+# RojoTree
+ A [Rojo](https://github.com/rojo-rbx/rojo) Tool
 
-Discord: **@altoxrbx**
-Twitter: **@AltoxRBX**
-
-## **What's This Useful For?**
-1. **Clean structure**
-    ```bash
-    ExampleService
-    |_Client.luau
-    |_Utils.luau
-    |_Server.luau
-    ```
-2. **Live syncing** 
-3. **Faster speeds with Rust**  
-
-## **Tutorial**
+# How To Use
 1. Go to **RojoTree**:
     ```bash
     cd Tools/RojoTree
@@ -29,6 +16,3 @@ Twitter: **@AltoxRBX**
     ```bash
     rojo serve
     ```
-
-## **Credits**
-Inspired by [@leifstout](https://github.com/leifstout/genRojoTree)
