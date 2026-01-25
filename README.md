@@ -1,5 +1,5 @@
 # RojoTree
- A [Rojo](https://github.com/rojo-rbx/rojo) Tool
+ Using [Rojo](https://github.com/rojo-rbx/rojo) 
 
 # How To Use
 1. Go to **RojoTree**:
@@ -16,3 +16,13 @@
     ```bash
     rojo serve
     ```
+
+# Structure
+```bash
+src/
+|_Services/
+  |_ExampleService
+    |_Client.luau
+    |_Server.luau
+    |_Utils.luau
+```

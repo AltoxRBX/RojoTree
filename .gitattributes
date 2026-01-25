@@ -1,3 +1,8 @@
+README.md linguist-documentation
 *.md linguist-documentation
 LICENSE linguist-documentation
-*.rs linguist-language=Rust
+LICENSE.* linguist-documentation
+*.toml linguist-documentation
+*.yml linguist-documentation
+*.yaml linguist-documentation
+*.json linguist-documentation
