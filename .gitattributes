@@ -1,2 +1,3 @@
-Makefile linguist-detectable=false
-*.md linguist-detectable=false
+*.md linguist-documentation
+LICENSE linguist-documentation
+*.rs linguist-language=Rust
