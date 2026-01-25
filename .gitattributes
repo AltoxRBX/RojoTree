@@ -1,8 +1,4 @@
-README.md linguist-documentation
+* text=auto
 *.md linguist-documentation
-LICENSE linguist-documentation
-LICENSE.* linguist-documentation
-*.toml linguist-documentation
-*.yml linguist-documentation
-*.yaml linguist-documentation
-*.json linguist-documentation
+*.rs linguist-language=Rust
+*.luau linguist-language=Luau
