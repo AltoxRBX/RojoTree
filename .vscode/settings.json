@@ -1,0 +1,11 @@
+{
+  "files.exclude": {
+    "**/target": true,
+    "**/.git": true
+  },
+  "editor.formatOnSave": true,
+  "rust-analyzer.cargo.runBuildScripts": true,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "zsh"
+}

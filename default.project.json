@@ -1,0 +1,44 @@
+{
+  "name": "genrojotree",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Packages": {
+        "$path": "Packages"
+      },
+      "Shared": {
+        "$className": "Folder",
+        "Classes": {
+          "$path": "src/Others/Shared/Classes"
+        },
+        "Modules": {
+          "$path": "src/Others/Shared/Modules"
+        }
+      },
+      "UI": {
+        "$path": "src/UI"
+      }
+    },
+    "ServerScriptService": {
+      "Classes": {
+        "$path": "src/Others/Server/Classes"
+      },
+      "Modules": {
+        "$path": "src/Others/Server/Modules"
+      },
+      "Server": {
+        "$path": "src/Start/Server.server.luau"
+      },
+      "ServerPackages": {
+        "$path": "ServerPackages"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/Start/Client.client.luau"
+        }
+      }
+    }
+  }
+}
