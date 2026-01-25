@@ -1,4 +1,11 @@
 * text=auto
-*.md linguist-documentation
 *.rs linguist-language=Rust
 *.luau linguist-language=Luau
+*.md linguist-documentation
+README.md linguist-documentation
+LICENSE linguist-documentation
+LICENSE.* linguist-documentation
+*.toml linguist-documentation
+*.yml linguist-documentation
+*.yaml linguist-documentation
+*.json linguist-documentation
