@@ -1,5 +1,5 @@
 [package]
-name = "user/rojo-template"
+name = "user/rojotree"
 version = "0.1.0"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"

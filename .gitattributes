@@ -1,2 +1,2 @@
 Makefile linguist-detectable=false
-*.mk linguist-detectable=false
+*.md linguist-detectable=false

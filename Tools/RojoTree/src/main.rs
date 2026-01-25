@@ -105,7 +105,7 @@ fn generate_project_file() {
     let mut init_claimed_folders = HashSet::new();
 
     let mut tree = json!({
-        "name": "genrojotree",
+        "name": "RojoTree",
         "tree": {
             "$className": "DataModel",
             "ReplicatedStorage": {
