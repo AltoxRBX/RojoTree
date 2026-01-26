@@ -1,1 +1,3 @@
-print("Hello, World!")
+local ExampleServiceUtils = {}
+
+return ExampleServiceUtils
