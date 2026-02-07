@@ -6,6 +6,7 @@ use notify::{Watcher, RecursiveMode, Event};
 use std::sync::mpsc::channel;
 use std::time::Duration;
 use colored::*;
+use chrono::Local;
 
 fn to_posix(p: &Path) -> String {
     p.to_str().unwrap().replace('\\', "/")
@@ -91,6 +92,51 @@ where
             } else if path.extension().and_then(|s| s.to_str()) == Some("luau") {
                 callback(&path);
             }
+        }
+    }
+}
+
+fn create_directory_structure() {
+    let directories = vec![
+        ("../../src/Start", "`Start` was missing from `src/`"),
+        ("../../src/UI", "`UI` was missing from `src/`"),
+        ("../../src/Services", "`Services` was missing from `src/`"),
+        ("../../src/Others/Shared/Classes", "`Others/Shared/Classes` was missing from `src/`"),
+        ("../../src/Others/Shared/Modules", "`Others/Shared/Modules` was missing from `src/`"),
+        ("../../src/Others/Server/Classes", "`Others/Server/Classes` was missing from `src/`"),
+        ("../../src/Others/Server/Modules", "`Others/Server/Modules` was missing from `src/`"),
+        ("../../Packages", "`Packages` was missing from root"),
+        ("../../ServerPackages", "`ServerPackages` was missing from root"),
+    ];
+
+    let mut issues = Vec::new();
+
+    for (dir, message) in directories {
+        let path = Path::new(dir);
+        if !path.exists() {
+            fs::create_dir_all(path).unwrap();
+            issues.push(message);
+        }
+    }
+
+    let files = vec![
+        ("../../src/Start/Server.server.luau", "`Server.server.luau` was missing from `src/Start/`", "print(\"Server initialized\")"),
+        ("../../src/Start/Client.client.luau", "`Client.client.luau` was missing from `src/Start/`", "print(\"Client initialized\")"),
+    ];
+
+    for (file_path, message, content) in files {
+        let path = Path::new(file_path);
+        if !path.exists() {
+            fs::write(path, content).unwrap();
+            issues.push(message);
+        }
+    }
+
+    if !issues.is_empty() {
+        let current_time = Local::now().format("%H:%M").to_string();
+        println!("{} {} {}", "🛠️ Fixed".green(), "RojoTree".purple().bold(), current_time.green());
+        for issue in issues {
+            println!("  {} {}", "|".green(), issue.white());
         }
     }
 }
@@ -200,11 +246,13 @@ fn generate_project_file() {
     )
     .unwrap();
 
-    println!("{}", "✅ default.project.json updated.".green().bold());
+    let current_time = Local::now().format("%H:%M").to_string();
+    println!("{} {} {}", "✅ Generated".green(), "RojoTree".purple().bold(), current_time.green());
 }
 
 fn main() {
-    println!("🚀 {} is running:", "RojoTree".purple().bold());
+    create_directory_structure();
+    println!("{} {} {}", "🚀".green(), "RojoTree".purple().bold(), "is running:".green());
     generate_project_file();
 
     let (tx, rx) = channel();

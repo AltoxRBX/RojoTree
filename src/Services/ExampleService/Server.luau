@@ -1,3 +1,0 @@
-local ExampleServiceServer = {}
-
-return ExampleServiceServer

@@ -23,11 +23,11 @@
       "Classes": {
         "$path": "src/Others/Server/Classes"
       },
-      "Modules": {
-        "$path": "src/Others/Server/Modules"
-      },
       "Initialize": {
         "$path": "src/Start/Server.server.luau"
+      },
+      "Modules": {
+        "$path": "src/Others/Server/Modules"
       },
       "Packages": {
         "$path": "ServerPackages"

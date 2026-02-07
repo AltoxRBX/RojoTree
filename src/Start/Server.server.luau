@@ -1,1 +1,1 @@
-print("Hello From" .. script.Name .. "!")
+print("Server initialized")

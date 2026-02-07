@@ -1,3 +1,0 @@
-local ExampleServiceClient = {}
-
-return ExampleServiceClient
