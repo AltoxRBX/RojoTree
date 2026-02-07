@@ -118,14 +118,14 @@ fn generate_project_file() {
                 "UI": { "$path": "src/UI" }
             },
             "ServerScriptService": {
-                "Server": { "$path": "src/Start/Server.server.luau" },
-                "ServerPackages": { "$path": "ServerPackages" },
+                "Initialize": { "$path": "src/Start/Server.server.luau" },
+                "Packages": { "$path": "ServerPackages" },
                 "Classes": { "$path": "src/Others/Server/Classes"},
                 "Modules": { "$path": "src/Others/Server/Modules"},
             },
             "StarterPlayer": {
                 "StarterPlayerScripts": {
-                    "Client": { "$path": "src/Start/Client.client.luau" }
+                    "Initialize": { "$path": "src/Start/Client.client.luau" }
                 },
             },
         }

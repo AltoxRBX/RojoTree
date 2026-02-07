@@ -26,16 +26,16 @@
       "Modules": {
         "$path": "src/Others/Server/Modules"
       },
-      "Server": {
+      "Initialize": {
         "$path": "src/Start/Server.server.luau"
       },
-      "ServerPackages": {
+      "Packages": {
         "$path": "ServerPackages"
       }
     },
     "StarterPlayer": {
       "StarterPlayerScripts": {
-        "Client": {
+        "Initialize": {
           "$path": "src/Start/Client.client.luau"
         }
       }
