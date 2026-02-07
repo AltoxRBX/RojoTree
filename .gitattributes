@@ -1,12 +1,15 @@
+*.rs linguist-detectable=true linguist-language=Rust
+*.luau linguist-detectable=true linguist-language=Lua
+*.lock linguist-generated=true
+Cargo.lock linguist-generated=true
+*.md linguist-documentation=true
+*.toml linguist-vendored=true
+*.json linguist-vendored=true
+Tools/RojoTree/target/** linguist-vendored=true
+Tools/RojoTree/src/** linguist-vendored=false
+Tools/RojoTree/src/*.rs linguist-detectable=true
 * text=auto
-*.md linguist-vendored
-README.md linguist-vendored
-LICENSE linguist-vendored
-LICENSE.* linguist-vendored
-*.toml linguist-vendored
-*.yml linguist-vendored
-*.yaml linguist-vendored
-*.json linguist-vendored
-*.rs linguist-language=Rust
-*.luau linguist-language=Luau
-*.lock linguist-vendored
+*.rs text eol=lf
+*.luau text eol=lf
+*.bat text eol=crlf
+*.exe binary
